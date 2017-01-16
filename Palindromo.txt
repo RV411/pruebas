@@ -1,47 +1,42 @@
-#include <stdio.h>
+include < stdio.h >
 #include <stdlib.h>
 
-int main(void)
+int
+main (void)
 {
+  char cad[300];
+  char vect[300];
+  int i = 0;
+  int j = 0;
+  int comp = 0;
 
-    char cad[300];
-    char vect[300];
-    int i = 0;
-    int j = 0;
-    int comp = 0;
+  printf ("Ingrese cadena: \n");
+  gets (cad);
 
-    printf("Ingrese cadena: \n");
-
-    gets(cad);
-
-    for (i = 0; cad[i] != '\0'; i++)
+  for (i = 0; cad[i] != '\0'; i++)
     {
     }
-    i = i - 1;
+  i = i - 1;
+  /*printf("%d",i); */
 
-    /*printf("%d",i);*/
-
-
-    while (i >= 0)
+  while (i >= 0)
     {
-
-        vect[j] = cad[i];
-
-        i = i - 1;
-        j = j + 1;
+      vect[j] = cad[i];
+      i = i - 1;
+      j = j + 1;
     }
 
-
-    comp = strncmp(cad, vect, (i + 1));
-
-
-    if (comp == 0)
+  comp = strncmp (cad, vect, (i + 1));
+  if (comp == 0)
     {
-        printf("Si");
+      printf ("Si");
+    }
+  else
+    {
+      printf ("No");
     }
 
-    else
-    {
-        printf("No");
-    }
+  return 0;
+
 }
+
