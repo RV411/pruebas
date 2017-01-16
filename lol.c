@@ -14,7 +14,13 @@ if(aux==0)
 aux=aux+1;
 }
 
-
-
+  if(aux==2)
+  {
+    printf("si");
+  }
+  else
+  {
+    printf("no");
+  }
 return 0;
 }
