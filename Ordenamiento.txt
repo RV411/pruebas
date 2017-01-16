@@ -1,67 +1,55 @@
-#include <stdio.h>
+include <stdio.h>
 
-
-int main(void)
+int
+main (void)
 {
+  int vect[1000];
+  int i = 0;
+  int aux = 0;
+  int j = 0;
+  int k = 0;
+  int m = 0;
+  int num = 0;
 
-    int vect[1000];
-    int i = 0;
-    int aux = 0;
-    int j = 0;
-    int k = 0;
-    int m = 0;
-    int num = 0;
-
-    while (num >= 0)
+  while (num >= 0)
     {
-        scanf("%d", &num);
-
-
-        if (num == -1)
+      scanf ("%d", &num);
+      if (num == -1)
         {
-
-
-            for (j = 0; j < i; j++)
+          for (j = 0; j < i; j++)
             {
-                for (k = 0; (k + 1) < i; k++)
+              for (k = 0; (k + 1) < i; k++)
                 {
-
-                    if (vect[k] > vect[k + 1])
+                  if (vect[k] > vect[k + 1])
                     {
-                        aux = vect[k];
-                        vect[k] = vect[k + 1];
-                        vect[k + 1] = aux;
+                      aux = vect[k];
+                      vect[k] = vect[k + 1];
+                      vect[k + 1] = aux;
                     }
                 }
             }
-
-            for (m = 0; m < i; m++)
+          for (m = 0; m < i; m++)
             {
-                printf("%d\n", vect[m]);
+              printf ("%d\n", vect[m]);
             }
-
-
-            for (j = 0; j < i; j++)
+          for (j = 0; j < i; j++)
             {
-                for (k = 0; (k + 1) < i; k++)
+              for (k = 0; (k + 1) < i; k++)
                 {
-
-                    if (vect[k] < vect[k + 1])
+                  if (vect[k] < vect[k + 1])
                     {
-                        aux = vect[k];
-                        vect[k] = vect[k + 1];
-                        vect[k + 1] = aux;
+                      aux = vect[k];
+                      vect[k] = vect[k + 1];
+                      vect[k + 1] = aux;
                     }
                 }
             }
-
-            for (m = 0; m < i; m++)
+          for (m = 0; m < i; m++)
             {
-                printf("%d\n", vect[m]);
+              printf ("%d\n", vect[m]);
             }
         }
-
-        vect[i] = num;
-        i = i + 1;
+      vect[i] = num;
+      i = i + 1;
     }
 }
