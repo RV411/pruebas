@@ -9,15 +9,14 @@ scanf("%i",&a);
 while(a!=0)
 {
 suma=suma+a;
-}
+};
 
 if(a==0)
 {
 prom=suma/cont;
 printf("%f",prom);
-}
-
+};
 cont=cont+1;
 
 return 0;
-}
+};
