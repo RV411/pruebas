@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int num = 0;
+    int res = 0;
+    int y = 0;
+    int x = 0;
+
+
+    scanf("%d", &num);
+
+
+    for (x = 1; x <= num; x++)
+    {
+        res = num % x;
+
+        if (res == 0)
+        {
+            y = y + 1;
+        }
+    }
+
+    if (y == 2)
+    {
+        printf("Si");
+    }
+
+    else
+    {
+        printf("No");
+    }
+}
